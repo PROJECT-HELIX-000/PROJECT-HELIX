@@ -7,6 +7,10 @@
 <title>PROJECT HELIX // 001</title>
 
 <style>
+    * {
+        box-sizing: border-box;
+    }
+
     body {
         margin: 0;
         background: #080a0d;
@@ -50,19 +54,34 @@
         letter-spacing: 1px;
     }
 
-    .sequence {
-        margin: 40px 0;
+    .cipher {
+        margin: 40px 0 25px;
         padding: 25px;
         border: 1px solid #343940;
-        font-size: 22px;
-        letter-spacing: 8px;
+        font-size: 25px;
+        letter-spacing: 7px;
     }
 
     .hint {
         color: #555b63;
         font-size: 11px;
-        margin-top: 30px;
+        line-height: 1.8;
         letter-spacing: 2px;
+    }
+
+    .continue {
+        display: inline-block;
+        margin-top: 40px;
+        padding: 12px 25px;
+        border: 1px solid #69717b;
+        color: #e6e9ed;
+        text-decoration: none;
+        letter-spacing: 3px;
+    }
+
+    .continue:hover {
+        background: #e6e9ed;
+        color: #080a0d;
     }
 </style>
 </head>
@@ -80,30 +99,23 @@
     <div class="line"></div>
 
     <div class="message">
-        INFORMATION HAS A STRUCTURE.<br><br>
-        IDENTIFY THE MESSAGE HIDDEN BELOW.
+        THE MESSAGE HAS BEEN SHIFTED.<br><br>
+        RETURN IT TO ITS ORIGINAL FORM.
     </div>
 
-    <div class="sequence">
-        19 5 17 21 5 14 3 5
+    <div class="cipher">
+        KHOOR
     </div>
 
     <div class="hint">
-        EVERY NUMBER HAS A LETTER.
+        THE SHIFT IS THREE.<br>
+        MOVE EACH LETTER BACKWARDS.
     </div>
 
-<br><br>
+    <a class="continue" href="puzzle-02.html">
+        CONTINUE
+    </a>
 
-<a href="puzzle-02.html" style="
-    color:#e6e9ed;
-    text-decoration:none;
-    border:1px solid #69717b;
-    padding:12px 25px;
-    letter-spacing:3px;
-">
-    CONTINUE
-</a>
-    
 </div>
 
 </body>
